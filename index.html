@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-
+    
     <title>👹 ANIMESTIAM</title>
 </head>
 
@@ -25,7 +25,7 @@
 
                 <!-- Formulaire de recherche -->
                 <form class="form-inline mt-2 mt-md-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search anime 💬" data-toggle="dropdown" />
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search anime 💬" data-toggle="dropdown" id="mySearch" />
                     <!-- Element dynamique -->
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="javascript:void(0);">Fate/Zero</a>
@@ -48,12 +48,12 @@
                 <!-- //////////////////////////////////////////////////////////// -->
                 <div class="row">
                     <!-- Element dynamique -->
-                    <div class="col-sm-6 col-md-4 col-xl-2">
+                    <div class="col-sm-6 col-md-4 col-xl-2" id="myAnime">
                         <div class="card mb-4 box-shadow">
                             <div class="card-body">
-                                <img class="card-img" alt="Fate Zero" src="https://cdn.myanimelist.net/images/anime/2/73249.jpg">
+                                <img class="card-img" alt="Fate Zero" src="https://cdn.myanimelist.net/images/anime/2/73249.jpg" id="pictureAnime">
 
-                                <p class="h6">
+                                <p class="h6" id ="titleAnime">
                                     Fate/Zero
                                     <span class="badge badge-info">8.6</span>
                                 </p>
@@ -65,86 +65,14 @@
                                         </button>
                                     </div>
 
-                                    <small class="text-muted">13 Ep.</small>
+                                    <small class="text-muted" id="nbEpisodes">13 Ep.</small>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- /Element dynamique -->
 
-                    <!-- //////////////////////////////////////////////////////////// -->
-                    <!-- A supprimer, ceci est pour l'exemple d'affichage de la liste en statique -->
-                    <!-- //////////////////////////////////////////////////////////// -->
-                    <div class="col-sm-6 col-md-4 col-xl-2">
-                        <div class="card mb-4 box-shadow">
-                            <div class="card-body">
-                                <img class="card-img" alt="Fate Zero" src="https://cdn.myanimelist.net/images/anime/2/73249.jpg">
-
-                                <p class="h6">
-                                    Fate/Zero
-                                    <span class="badge badge-info">8.6</span>
-                                </p>
-
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#modal-detail-anime">
-                                            Info
-                                        </button>
-                                    </div>
-
-                                    <small class="text-muted">13 Ep.</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     
-                    <div class="col-sm-6 col-md-4 col-xl-2">
-                        <div class="card mb-4 box-shadow">
-                            <div class="card-body">
-                                <img class="card-img" alt="Fate Zero" src="https://cdn.myanimelist.net/images/anime/2/73249.jpg">
-
-                                <p class="h6">
-                                    Fate/Zero
-                                    <span class="badge badge-info">8.6</span>
-                                </p>
-
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#modal-detail-anime">
-                                            Info
-                                        </button>
-                                    </div>
-
-                                    <small class="text-muted">13 Ep.</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-xl-2">
-                        <div class="card mb-4 box-shadow">
-                            <div class="card-body">
-                                <img class="card-img" alt="Fate Zero" src="https://cdn.myanimelist.net/images/anime/2/73249.jpg">
-
-                                <p class="h6">
-                                    Fate/Zero
-                                    <span class="badge badge-info">8.6</span>
-                                </p>
-
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#modal-detail-anime">
-                                            Info
-                                        </button>
-                                    </div>
-
-                                    <small class="text-muted">13 Ep.</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- //////////////////////////////////////////////////////////// -->
-                    <!-- /A supprimer, ceci est pour l'exemple d'affichage de la liste -->
-                    <!-- //////////////////////////////////////////////////////////// -->
                 </div>
                 <!-- //////////////////////////////////////////////////////////// -->
                 <!-- /ANIME LIST -->
@@ -219,14 +147,15 @@
     <!-- //////////////////////////////////////////////////////////// -->
 
     <!-- Attention à l'ordre de chargement quand vous ajoutez un script ! -->
-    <script src="https://code.jquery.com/jquery-3.x-git.slim.min.js"></script>
+    <script src="js/app.js"></script>
+   <!--  <script src="https://code.jquery.com/jquery-3.x-git.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./scripts/api/api.js"></script>
     <script src="./scripts/api/resource.js"></script>
     <script src="./scripts/api/animeResource.js"></script>
     <script src="./scripts/api/searchResource.js"></script>
-    <script src="./scripts/main.js"></script>
+    <script src="./scripts/main.js"></script> -->
 </body>
 
 </html>
