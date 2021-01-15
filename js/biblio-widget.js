@@ -58,6 +58,7 @@ function render() {
                 for (let i=0; i<res.genres.length; i++) {
                     document.getElementById('genrePopUp').innerHTML += '<span class="badge badge-info">'+res.genres[i].name+'</span>&nbsp;';
                 }
+                document.getElementById('trailerPopUp').href = `${res.trailer_url}`;
 
                 
                 
